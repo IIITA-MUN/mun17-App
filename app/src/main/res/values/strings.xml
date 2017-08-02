@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">IIITA MUN</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_secretariat">Secretariat</string>
+    <string name="title_resources">Resources</string>
+
+    <string name="title_aboutus">About Us</string>
+    <string name="title_committees">Committees</string>
+    <string name="title_aboutmun">About MUN</string>
+    <string name="title_apply">Apply</string>
+
+    <string name="res_bg_unhrc">Background Guide (UNHRC)</string>
+    <string name="res_bg_eu">Background Guide (EU)</string>
+    <string name="res_reuters">Reuters</string>
+    <string name="res_factbook">CIA World Factbook</string>
+    <string name="res_worldbank">World Bank</string>
+
+    <string name="img_description">Profile Image</string>
+
+</resources>
