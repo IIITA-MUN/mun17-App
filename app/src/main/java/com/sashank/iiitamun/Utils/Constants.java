@@ -16,7 +16,7 @@ public class Constants {
 
     static {
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Gaganjeet Reen","Secretary General",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(ic_launcher,"Gaganjeet Reen","Secretary General","9988776655","iec2016007@iiita.ac.in","254175194653125",true));
 
         secretariatList.add(new SecretariatPerson(ic_launcher,"Ayushi Asthana","Director General",null,null,null,false));
 

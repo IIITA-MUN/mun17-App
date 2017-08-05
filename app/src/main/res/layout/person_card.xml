@@ -54,6 +54,46 @@
                 android:layout_marginTop="16dp"
                 card_view:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
+            <ImageButton
+                android:id="@+id/bt_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:src="@drawable/fb_icon"
+                card_view:layout_constraintRight_toLeftOf="@+id/bt_call"
+                android:layout_marginRight="8dp"
+                card_view:layout_constraintLeft_toRightOf="@+id/imageView"
+                android:layout_marginLeft="8dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="24dp" />
+
+            <ImageButton
+                android:id="@+id/bt_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/call_icon"
+                android:background="@drawable/round_button"
+                card_view:layout_constraintLeft_toRightOf="@+id/bt_facebook"
+                card_view:layout_constraintRight_toRightOf="@+id/bt_email"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="8dp" />
+
+            <ImageButton
+                android:id="@+id/bt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:src="@drawable/mail_icon"
+                android:layout_marginRight="8dp"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintLeft_toRightOf="@+id/bt_call"
+                android:layout_marginLeft="8dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="24dp" />
+
+
 
         </android.support.constraint.ConstraintLayout>
 
