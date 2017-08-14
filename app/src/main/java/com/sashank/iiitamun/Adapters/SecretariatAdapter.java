@@ -3,12 +3,20 @@ package com.sashank.iiitamun.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.sashank.iiitamun.*;
@@ -17,10 +25,13 @@ import com.sashank.iiitamun.Utils.SecretariatPerson;
 
 import java.util.List;
 
+import static android.content.Context.LAYOUT_INFLATER_SERVICE;
+
 public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.AdapterViewHolder> {
 
     private List<SecretariatPerson> secretariatPersonList;
-    Context context;
+    private Context context;
+    //private FrameLayout parentView;
 
     public SecretariatAdapter(Context context, List<SecretariatPerson> secretariatPersonList){
         this.secretariatPersonList = secretariatPersonList;
@@ -32,9 +43,10 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
 
         private final TextView mTitle;
         private final TextView mDescription;
-        private final ImageButton mCall;
-        private final ImageButton mEmail;
-        private final ImageButton mFaceBook;
+        private final ImageView mCall;
+        private final ImageView mEmail;
+        private final ImageView mFaceBook;
+        private final ImageView mProfile;
 
 
         public AdapterViewHolder(View itemView) {
@@ -42,9 +54,11 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
             mTitle = (TextView) itemView.findViewById(R.id.tv_title);
             mDescription = (TextView) itemView.findViewById(R.id.tv_details);
 
-            mCall = (ImageButton) itemView.findViewById(R.id.bt_call);
-            mEmail = (ImageButton) itemView.findViewById(R.id.bt_email);
-            mFaceBook = (ImageButton) itemView.findViewById(R.id.bt_facebook);
+            mCall = (ImageView) itemView.findViewById(R.id.bt_call);
+            mEmail = (ImageView) itemView.findViewById(R.id.bt_email);
+            mFaceBook = (ImageView) itemView.findViewById(R.id.bt_facebook);
+
+            mProfile = (ImageView) itemView.findViewById(R.id.iv_profile);
 
         }
     }
@@ -66,6 +80,12 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
 
     @Override
     public void onBindViewHolder(AdapterViewHolder holder, int position) {
+        Typeface tf = Typeface.createFromAsset(context.getAssets(),
+                "fonts/SourceSansPro-Regular.ttf");
+
+        holder.mTitle.setTypeface(tf);
+        holder.mDescription.setTypeface(tf);
+
         holder.mTitle.setText(secretariatPersonList.get(position).getName());
         holder.mDescription.setText(secretariatPersonList.get(position).getDesignation());
 
@@ -101,6 +121,13 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
 
             }
         });
+
+        /*holder.mProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPopup(v);
+            }
+        });*/
     }
 
     @Override
@@ -129,4 +156,33 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
         return intent;
     }
 
+    /*private void showPopup(View v){
+        final LinearLayout mainLayout = (LinearLayout) v.findViewById(R.id.activity_main_layout);
+
+        // inflate the layout of the popup window
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(LAYOUT_INFLATER_SERVICE);
+        final View popupView = inflater.inflate(R.layout.popup_layout,mainLayout);
+
+
+        // create the popup window
+        int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+        int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+        boolean focusable = true; // lets taps outside the popup also dismiss it
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+        // show the popup window
+        popupWindow.showAtLocation(v, Gravity.CENTER, 0, 0);
+        parentView.getForeground().setAlpha( 220); // dim
+
+
+        // dismiss the popup window when touched
+        popupView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                popupWindow.dismiss();
+               parentView.getForeground().setAlpha(0); // restore
+                return true;
+            }
+        });
+    }*/
 }

@@ -2,6 +2,7 @@ package com.sashank.iiitamun.Fragments;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -28,6 +29,17 @@ public class ResourcesFragment extends Fragment{
         TextView mReuters = (TextView) v.findViewById(R.id.tv_reuters);
         TextView mFactbook = (TextView) v.findViewById(R.id.tv_cia_world_factbook);
         TextView mWorldbank = (TextView) v.findViewById(R.id.tv_world_bank);
+        TextView mUnhrcBg = (TextView) v.findViewById(R.id.tv_bg_unhrc);
+        TextView mEuBg = (TextView) v.findViewById(R.id.tv_bg_eu);
+
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
+                "fonts/SourceSansPro-Regular.ttf");
+        mReuters.setTypeface(tf);
+        mFactbook.setTypeface(tf);
+        mWorldbank.setTypeface(tf);
+        mUnhrcBg.setTypeface(tf);
+        mEuBg.setTypeface(tf);
+
 
         mReuters.setOnClickListener(new View.OnClickListener() {
             @Override

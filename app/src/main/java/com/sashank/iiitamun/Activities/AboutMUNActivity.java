@@ -26,7 +26,7 @@ public class AboutMUNActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        // When the home button is pressed, take the user back to the VisualizerActivity
+        // When the home button is pressed, take the user back to the HomeActivity
         if (id == android.R.id.home) {
             NavUtils.navigateUpFromSameTask(this);
         }

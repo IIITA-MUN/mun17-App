@@ -18,7 +18,7 @@
             android:layout_height="150dp">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/iv_profile"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginBottom="8dp"
@@ -40,7 +40,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="20dp"
                 card_view:layout_constraintLeft_toLeftOf="parent"
-                card_view:layout_constraintRight_toLeftOf="@+id/imageView"
+                card_view:layout_constraintRight_toLeftOf="@+id/iv_profile"
                 card_view:layout_constraintTop_toTopOf="parent"
                  />
 
@@ -52,28 +52,26 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="16dp"
-                card_view:layout_constraintRight_toLeftOf="@+id/imageView"
+                card_view:layout_constraintRight_toLeftOf="@+id/iv_profile"
                 card_view:layout_constraintLeft_toLeftOf="parent"
                 card_view:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-            <ImageButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/bt_call"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="8dp"
                 android:src="@drawable/call_icon"
-                android:background="@drawable/round_button"
                 card_view:layout_constraintRight_toLeftOf="@+id/bt_facebook"
                 card_view:layout_constraintLeft_toRightOf="@id/bt_email"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="24dp"
                 android:layout_marginRight="8dp" />
 
-            <ImageButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/bt_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/mail_icon"
                 android:layout_marginRight="8dp"
                 card_view:layout_constraintRight_toLeftOf="@+id/bt_call"
@@ -82,15 +80,14 @@
                 android:layout_marginBottom="24dp"
                 card_view:layout_constraintLeft_toLeftOf="parent" />
 
-            <ImageButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/bt_facebook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/fb_icon"
                 card_view:layout_constraintLeft_toRightOf="@+id/bt_call"
                 android:layout_marginRight="8dp"
-                card_view:layout_constraintRight_toLeftOf="@+id/imageView"
+                card_view:layout_constraintRight_toLeftOf="@+id/iv_profile"
                 android:layout_marginLeft="8dp"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="24dp" />
