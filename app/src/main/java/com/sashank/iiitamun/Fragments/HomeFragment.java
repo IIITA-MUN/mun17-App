@@ -18,6 +18,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.sashank.iiitamun.Activities.AboutMUNActivity;
+import com.sashank.iiitamun.Activities.AboutUsActivity;
 import com.sashank.iiitamun.Activities.CommitteesActivity;
 import com.sashank.iiitamun.R;
 
@@ -59,6 +60,13 @@ public class HomeFragment extends Fragment{
             public void onClick(View v) {
                 Intent i = new Intent(getContext(), CommitteesActivity.class);
                 startActivity(i);
+            }
+        });
+
+        mAboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), AboutUsActivity.class));
             }
         });
 

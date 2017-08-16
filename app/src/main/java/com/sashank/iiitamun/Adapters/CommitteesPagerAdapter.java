@@ -39,34 +39,3 @@ public class CommitteesPagerAdapter extends FragmentStatePagerAdapter {
         return titles[position];
     }
 }
-
-/*
-public class DemoCollectionPagerAdapter extends FragmentStatePagerAdapter {
-
-    private String[] days = {"Today", "Tomorrow", "After 2 days", "After 3 days", "After 4 days", "After 5 days", "After 6 days"};
-
-    public DemoCollectionPagerAdapter(FragmentManager fm) {
-        super(fm);
-    }
-
-    @Override
-    public Fragment getItem(int position) {
-        Fragment fragment = new DemoObjectFragment();
-        Bundle args = new Bundle();
-        args.putInt(DemoObjectFragment.ARG_OBJECT, position+1);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public int getCount() {
-        return 7;
-    }
-
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return days[position];
-    }
-}
-
- */
