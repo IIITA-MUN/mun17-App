@@ -88,6 +88,7 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
 
         holder.mTitle.setText(secretariatPersonList.get(position).getName());
         holder.mDescription.setText(secretariatPersonList.get(position).getDesignation());
+        holder.mProfile.setImageResource(secretariatPersonList.get(position).getImageRef());
 
         position = holder.getAdapterPosition();
         final int finalPosition = position;

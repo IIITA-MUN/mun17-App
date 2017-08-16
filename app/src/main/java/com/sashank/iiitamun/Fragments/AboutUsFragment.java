@@ -60,6 +60,9 @@ public class AboutUsFragment extends Fragment {
         TextView mAboutDetails = (TextView) rootView.findViewById(R.id.tv_about_details);
         TextView mAboutTitle = (TextView) rootView.findViewById(R.id.tv_about_title);
         ImageView image = (ImageView) rootView.findViewById(R.id.iv_about_us);
+        TextView swipeLeft = (TextView) rootView.findViewById(R.id.tv_swipe_left);
+        TextView swipeRight = (TextView) rootView.findViewById(R.id.tv_swipe_right);
+
 
         image.setImageResource(mResources[position]);
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
@@ -71,8 +74,22 @@ public class AboutUsFragment extends Fragment {
         mAboutTitle.setText(mTitles[position]);
         mAboutTitle.setTypeface(tfb);
 
-        if(position == 0)
-            Toast.makeText(getContext(),"Swipe left for more",Toast.LENGTH_SHORT).show();
+        /*if(position == 0)
+            Toast.makeText(getContext(),"Swipe left for more",Toast.LENGTH_SHORT).show();*/
+
+        switch(position){
+            case 0:
+                swipeLeft.setVisibility(View.VISIBLE);
+                break;
+            case 1:
+            case 2:
+                swipeLeft.setVisibility(View.VISIBLE);
+                swipeRight.setVisibility(View.VISIBLE);
+                break;
+            case 3:
+                swipeRight.setVisibility(View.VISIBLE);
+                break;
+        }
 
         return rootView;
     }

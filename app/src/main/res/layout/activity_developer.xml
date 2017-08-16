@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sashank.iiitamun.Activities.DeveloperActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Developer"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:id="@+id/tv_app_developer" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:id="@+id/iv_developer"
+        android:src="@drawable/sashank"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/tv_app_developer_name"
+        android:textColor="#00000f"
+        android:layout_marginTop="10dp"
+        android:text="Sashank Mishra"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

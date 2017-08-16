@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.sashank.iiitamun.Activities.AboutMUNActivity;
 import com.sashank.iiitamun.Activities.AboutUsActivity;
 import com.sashank.iiitamun.Activities.CommitteesActivity;
+import com.sashank.iiitamun.Activities.DeveloperActivity;
 import com.sashank.iiitamun.R;
 
 import static android.content.Context.LAYOUT_INFLATER_SERVICE;
@@ -39,6 +40,7 @@ public class HomeFragment extends Fragment{
         TextView mApply = (TextView) v.findViewById(R.id.tv_apply);
 
         ImageView mLocateUs = (ImageView) v.findViewById(R.id.iv_locate_us);
+        ImageView mCredits = (ImageView) v.findViewById(R.id.iv_credits);
 
         mAboutMun.setTypeface(tf);
         mCommittees.setTypeface(tf);
@@ -74,6 +76,13 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 openInMap();
+            }
+        });
+
+        mCredits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), DeveloperActivity.class));
             }
         });
         return v;
