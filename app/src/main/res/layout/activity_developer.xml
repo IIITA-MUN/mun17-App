@@ -21,7 +21,7 @@
         android:layout_width="250dp"
         android:layout_height="230dp"
         android:id="@+id/iv_developer"
-        android:src="@drawable/sashank"
+        android:src="@drawable/sashank_eng"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"/>
 

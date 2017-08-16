@@ -11,8 +11,8 @@
     <string name="title_aboutmun">About MUN</string>
     <string name="title_apply">Apply</string>
 
-    <string name="res_bg_unhrc">Background Guide (UNHRC)</string>
-    <string name="res_bg_eu">Background Guide (EU)</string>
+    <string name="res_bg_disec">Background Guide (DISEC)</string>
+    <string name="res_bg_sc">Background Guide (SC)</string>
     <string name="res_reuters">Reuters</string>
     <string name="res_factbook">CIA World Factbook</string>
     <string name="res_world_bank">World Bank</string>
@@ -23,10 +23,17 @@
     <string name="text_about">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
 
 Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc</string>
+
     <string name="title_activity_about_us">About Us</string>
     <string name="action_settings">Settings</string>
     <string name="swipe_left"><![CDATA[>> Swipe Left >>]]></string>
     <string name="swipe_right"><![CDATA[<< Swipe Right <<]]></string>
+
+    <string name="detail_disec">The <b>Disarmament and International Security Committee</b> deals with disarmament, global challenges and threats to peace that affect the international community and seeks out solutions to the challenges in the international security.It considers all disarmament and international security matters within the scope of the Charter or relating to the powers and functions of any other organ of the United Nations.
+    \n\n <b>Agenda: </b> \n\n Lorem ipsum dolor sit amet, consectetuer adipiscing elit." </string>
+
+    <string name="detail_sc">The <b>Security Council</b> is the United Nations\' most powerful body, with \"primary responsibility for the maintenance of international peace and security.\" Five powerful countries sit as permanent members along with ten elected members with two-year terms. Since 1990, the Council has dramatically increased its activity and the council now meets in nearly continuous session.
+    \n\n <b>Agenda: </b> \n\n Lorem ipsum dolor sit amet, consectetuer adipiscing elit." </string>
 
 
 </resources>

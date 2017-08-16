@@ -15,7 +15,7 @@ import com.sashank.iiitamun.Fragments.CommitteesFragment;
 
 public class CommitteesPagerAdapter extends FragmentStatePagerAdapter {
 
-    String titles[] = {"United Nation Human Rights Council (UNHRC)", "European Union (EU)"};
+    String titles[] = {"The Disarmament and International Security Committee (DISEC)", "Security Council (SC)"};
 
     public CommitteesPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -25,7 +25,7 @@ public class CommitteesPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         Fragment fragment = new CommitteesFragment();
         Bundle args = new Bundle();
-        args.putInt(CommitteesFragment.ARG_OBJECT, position+1);
+        args.putInt(CommitteesFragment.ARG_OBJECT, position);
         fragment.setArguments(args);
         return fragment;
     }

@@ -10,10 +10,10 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/tv_bg_unhrc"
+                android:id="@+id/tv_bg_disec"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/res_bg_unhrc"
+                android:text="@string/res_bg_disec"
                 android:drawableStart="@drawable/pdf"
                 android:padding="10dp"
                 android:textSize="15sp" />
@@ -21,10 +21,10 @@
             <!--style="?android:attr/borderlessButtonStyle"-->
 
             <Button
-                android:id="@+id/tv_bg_eu"
+                android:id="@+id/tv_bg_sc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/res_bg_eu"
+                android:text="@string/res_bg_sc"
                 android:drawableStart="@drawable/pdf"
                 android:padding="10dp"
                 android:textSize="15sp" />

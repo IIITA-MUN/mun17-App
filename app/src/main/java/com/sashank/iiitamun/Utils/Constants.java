@@ -1,5 +1,6 @@
 package com.sashank.iiitamun.Utils;
 
+import com.sashank.iiitamun.R;
 import com.sashank.iiitamun.Utils.SecretariatPerson;
 
 import java.util.ArrayList;
@@ -16,39 +17,73 @@ public class Constants {
 
     static {
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Gaganjeet Reen","Secretary General","9988776655","iec2016007@iiita.ac.in","254175194653125",true));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.gjr,"Gaganjeet Reen","Secretary General",null,
+                null,"gaganjeet.reen",true));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Ayushi Asthana","Director General",null,null,null,false));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.aayushi,"Ayushi Asthana","Director General",null,
+                        null,"ayushi.asthana.7",false));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Manasi Mohandas","Director General",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.manasi,"Manasi Mohandas","Director General",null,
+                        null,"manasi.mohandas.1",true));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Mantek Singh","Deputy Secretary General",null,null,null,false));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.mantek,"Mantek Singh","Deputy Secretary General",null,
+                        null,"mantek.singh",false));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Bhanu Bhandari","USG Administration",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.bhanu,"Bhanu Bhandari","USG Administration",null,
+                        null,"falafelraider",true));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Maanas Vohra","USG International Press",null,null,null,false));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.maanas,"Maanas Vohra","USG International Press",null,
+                        null,"maanas.vohra",false));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Kartik Madaan","USG International Press",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(
+                ic_launcher,"Kartik Madaan","USG International Press",null,
+                        null,"kartik.madaan.90",true));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Rishi Shukla", "USG Socio-Economic Affairs",null,null,null,false));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.rishi,"Rishi Shukla", "USG Socio-Economic Affairs","7234047435",
+                "iec2016007@iiita.ac.in","rishishukla5598",false));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Niharika Gali","USG Delegate Affairs",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.gali,"Niharika Gali","USG Delegate Affairs", null,
+                null,"niharikagali",true));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Aditi Agrawal","USG Delegate Affairs",null,null,null,false));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.aditi,"Aditi Agrawal","USG Delegate Affairs",null,
+                null,"aditi.agrawal.5817",false));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Dhvit Mehta","USG Financial Affairs",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.dhvith,"Dhvit Mehta","USG Financial Affairs",null,
+                null,"thismanisawesome",true));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Ravi Charan","USG Information Services",null,null,null,false));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.ravi,"Ravi Charan","USG Information Services",null,
+                null,"ravi.charan.5680",false));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Sashank Mishra","USG Information Services",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.sashank,"Sashank Mishra","USG Information Services","7275253323",
+                "iwm2016001@iiita.ac.in","100000179816805",true));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Anmol Sethi","USG Delegate Welfare",null,null,null,false));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.anmol,"Anmol Sethi","USG Delegate Welfare",null,
+                null,"anmolsingh.sethi",false));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Ridam Arora","USG Delegate Welfare",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.ridam,"Ridam Arora","USG Delegate Welfare",null,
+                null,"ridamarora89",true));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Siddhant Srivastav","USG Creative Content",null,null,null,false));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.sid,"Siddhant Srivastav","USG Creative Content",null,
+                null,"siddhant.srivastav.3",false));
 
-        secretariatList.add(new SecretariatPerson(ic_launcher,"Kadambari Anuranjana","USG Conference Services",null,null,null,true));
+        secretariatList.add(new SecretariatPerson(
+                R.drawable.kadambari,"Kadambari Anuranjana","USG Conference Services",null,
+                null,"kadambari.kaveri",true));
 
     }
 }

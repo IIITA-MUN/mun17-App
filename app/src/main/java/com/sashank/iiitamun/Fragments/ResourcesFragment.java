@@ -29,16 +29,16 @@ public class ResourcesFragment extends Fragment{
         TextView mReuters = (TextView) v.findViewById(R.id.tv_reuters);
         TextView mFactbook = (TextView) v.findViewById(R.id.tv_cia_world_factbook);
         TextView mWorldbank = (TextView) v.findViewById(R.id.tv_world_bank);
-        TextView mUnhrcBg = (TextView) v.findViewById(R.id.tv_bg_unhrc);
-        TextView mEuBg = (TextView) v.findViewById(R.id.tv_bg_eu);
+        TextView mDisecBg = (TextView) v.findViewById(R.id.tv_bg_disec);
+        TextView mScBg = (TextView) v.findViewById(R.id.tv_bg_sc);
 
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
                 "fonts/SourceSansPro-Regular.ttf");
         mReuters.setTypeface(tf);
         mFactbook.setTypeface(tf);
         mWorldbank.setTypeface(tf);
-        mUnhrcBg.setTypeface(tf);
-        mEuBg.setTypeface(tf);
+        mDisecBg.setTypeface(tf);
+        mScBg.setTypeface(tf);
 
 
         mReuters.setOnClickListener(new View.OnClickListener() {
