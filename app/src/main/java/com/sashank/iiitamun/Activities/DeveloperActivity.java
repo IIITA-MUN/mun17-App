@@ -27,7 +27,10 @@ public class DeveloperActivity extends AppCompatActivity {
         Typeface tf = Typeface.createFromAsset(getAssets(),
                 "fonts/SourceSansPro-Regular.ttf");
 
-        ((TextView)findViewById(R.id.tv_app_developer)).setTypeface(tf);
+        Typeface tfb = Typeface.createFromAsset(getAssets(),
+                "fonts/SourceSansPro-SemiboldItalic.ttf");
+
+        ((TextView)findViewById(R.id.tv_app_developer)).setTypeface(tfb);
         ((TextView)findViewById(R.id.tv_app_developer_name)).setTypeface(tf);
 
     }

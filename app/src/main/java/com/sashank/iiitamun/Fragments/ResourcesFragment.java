@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.sashank.iiitamun.R;
 
@@ -40,6 +41,9 @@ public class ResourcesFragment extends Fragment{
         mDisecBg.setTypeface(tf);
         mScBg.setTypeface(tf);
 
+        TextView title = (TextView) getActivity().findViewById(R.id.tv_activity_name);
+        title.setText(R.string.title_resources);
+        title.setTypeface(tf);
 
         mReuters.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +66,21 @@ public class ResourcesFragment extends Fragment{
                 openWebPage(mWorldBankUrl);
             }
         });
+
+        mDisecBg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(),"Will be out soon!",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        mScBg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(),"Will be out soon!",Toast.LENGTH_LONG).show();
+            }
+        });
+
 
         return v;
     }

@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.sashank.iiitamun.Activities.AboutMUNActivity;
 import com.sashank.iiitamun.Activities.AboutUsActivity;
@@ -41,6 +42,11 @@ public class HomeFragment extends Fragment{
 
         ImageView mLocateUs = (ImageView) v.findViewById(R.id.iv_locate_us);
         ImageView mCredits = (ImageView) v.findViewById(R.id.iv_credits);
+
+        TextView title = (TextView) getActivity().findViewById(R.id.tv_activity_name);
+        title.setText(R.string.title_home);
+        title.setTypeface(tf);
+
 
         mAboutMun.setTypeface(tf);
         mCommittees.setTypeface(tf);
@@ -83,6 +89,13 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), DeveloperActivity.class));
+            }
+        });
+
+        mApply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(),"Will be out soon!",Toast.LENGTH_LONG).show();
             }
         });
         return v;

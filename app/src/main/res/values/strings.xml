@@ -2,9 +2,9 @@
 
     <string name="app_name">IIITA MUN</string>
 
-    <string name="title_home">Home</string>
-    <string name="title_secretariat">Secretariat</string>
-    <string name="title_resources">Resources</string>
+    <string name="title_home">HOME</string>
+    <string name="title_secretariat">SECRETARIAT</string>
+    <string name="title_resources">RESOURCES</string>
 
     <string name="title_aboutus">About Us</string>
     <string name="title_committees">Committees</string>
@@ -34,6 +34,9 @@ Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
 
     <string name="detail_sc">The <b>Security Council</b> is the United Nations\' most powerful body, with \"primary responsibility for the maintenance of international peace and security.\" Five powerful countries sit as permanent members along with ten elected members with two-year terms. Since 1990, the Council has dramatically increased its activity and the council now meets in nearly continuous session.
     \n\n <b>Agenda: </b> \n\n Lorem ipsum dolor sit amet, consectetuer adipiscing elit." </string>
+
+    <string name="title_developer">App Developer</string>
+    <string name="name_developer">Sashank Mishra</string>
 
 
 </resources>

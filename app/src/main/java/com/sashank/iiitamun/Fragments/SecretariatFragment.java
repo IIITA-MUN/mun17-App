@@ -1,5 +1,6 @@
 package com.sashank.iiitamun.Fragments;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.sashank.iiitamun.Adapters.SecretariatAdapter;
 import com.sashank.iiitamun.Utils.Constants;
@@ -33,6 +35,12 @@ public class SecretariatFragment extends Fragment {
 
         mRecyclerSecretariat.setLayoutManager(layoutManager);
         mRecyclerSecretariat.setAdapter(secretariatAdapter);
+
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
+                "fonts/SourceSansPro-Regular.ttf");
+        TextView title = (TextView) getActivity().findViewById(R.id.tv_activity_name);
+        title.setText(R.string.title_secretariat);
+        title.setTypeface(tf);
 
         return v;
     }

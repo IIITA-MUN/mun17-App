@@ -1,8 +1,6 @@
 package com.sashank.iiitamun.Activities;
 
-import android.content.Intent;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -11,14 +9,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.ViewGroup;
-import android.widget.StackView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.sashank.iiitamun.Fragments.HomeFragment;
 import com.sashank.iiitamun.R;
@@ -33,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView navigationView;
     FragmentManager fm;
-    private boolean backTrace;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -73,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         resourcesFragment = new ResourcesFragment();
         secretariatFragment = new SecretariatFragment();
 
-        backTrace = false;
 
         /*ViewGroup actionBarLayout = (ViewGroup) getLayoutInflater().
                 inflate(R.layout.actionbar_custom, null);
@@ -93,29 +83,44 @@ public class MainActivity extends AppCompatActivity {
 
     private void setFragment(Fragment f) {
         fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+
         if (fm.getFragments() == null) {
-            fm.beginTransaction().add(R.id.frame, f).commit();
+            ft.add(R.id.frame, f).commit();
             return;
         }
         if (fm.getFragments().contains(f)) {
-            FragmentTransaction ft = fm.beginTransaction();
             for (Fragment fragment : fm.getFragments()) {
                 if (fragment != null) {
                     ft.hide(fragment);
                 }
             }
             ft.show(f);
-            ft.commit();
         } else {
-            FragmentTransaction ft = fm.beginTransaction();
             for (Fragment fragment : fm.getFragments()) {
                 if (fragment != null) {
                     ft.hide(fragment);
                 }
             }
             ft.add(R.id.frame, f);
-            ft.commit();
         }
+
+        if(f instanceof HomeFragment)
+            setMainTitle(R.string.title_home);
+        else if(f instanceof ResourcesFragment)
+            setMainTitle(R.string.title_resources);
+        else if(f instanceof SecretariatFragment)
+            setMainTitle(R.string.title_secretariat);
+
+        ft.commit();
+    }
+
+    private void setMainTitle(int StringVal) {
+        Typeface tf = Typeface.createFromAsset(getAssets(),
+                "fonts/SourceSansPro-Regular.ttf");
+        TextView title = (TextView) findViewById(R.id.tv_activity_name);
+        title.setText(StringVal);
+        title.setTypeface(tf);
     }
 
     @Override
