@@ -27,7 +27,7 @@ public class ResourcesFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_resources,container,false);
 
-        TextView mReuters = (TextView) v.findViewById(R.id.tv_reuters);
+        /*TextView mReuters = (TextView) v.findViewById(R.id.tv_reuters);
         TextView mFactbook = (TextView) v.findViewById(R.id.tv_cia_world_factbook);
         TextView mWorldbank = (TextView) v.findViewById(R.id.tv_world_bank);
         TextView mDisecBg = (TextView) v.findViewById(R.id.tv_bg_disec);
@@ -79,7 +79,7 @@ public class ResourcesFragment extends Fragment{
             public void onClick(View v) {
                 Toast.makeText(getContext(),"Will be out soon!",Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
 
         return v;

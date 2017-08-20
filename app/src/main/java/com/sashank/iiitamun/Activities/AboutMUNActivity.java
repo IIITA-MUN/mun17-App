@@ -1,10 +1,12 @@
 package com.sashank.iiitamun.Activities;
 
+import android.graphics.Typeface;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.sashank.iiitamun.R;
 
@@ -14,6 +16,11 @@ public class AboutMUNActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_mun);
+
+        TextView mDetail = (TextView) findViewById(R.id.tv_detail_mun);
+        Typeface tf = Typeface.createFromAsset(getAssets(),
+                "fonts/SourceSansPro-Regular.ttf");
+        mDetail.setTypeface(tf);
 
         ActionBar actionBar = this.getSupportActionBar();
 

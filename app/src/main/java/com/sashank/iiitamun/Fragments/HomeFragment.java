@@ -39,6 +39,7 @@ public class HomeFragment extends Fragment{
         TextView mCommittees = (TextView) v.findViewById(R.id.tv_committees);
         TextView mAboutUs = (TextView) v.findViewById(R.id.tv_aboutUs);
         TextView mApply = (TextView) v.findViewById(R.id.tv_apply);
+        TextView mBlog = (TextView) v.findViewById(R.id.tv_blog);
 
         ImageView mLocateUs = (ImageView) v.findViewById(R.id.iv_locate_us);
         ImageView mCredits = (ImageView) v.findViewById(R.id.iv_credits);
@@ -95,9 +96,17 @@ public class HomeFragment extends Fragment{
         mApply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Will be out soon!",Toast.LENGTH_LONG).show();
+                openWebPage("https://mun.iiita.ac.in/home/apply.html");
             }
         });
+
+        mBlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openWebPage("https://iiitamun17.wordpress.com/");
+            }
+        });
+
         return v;
     }
 
@@ -109,5 +118,13 @@ public class HomeFragment extends Fragment{
             startActivity(intent);
 
         //Location = 25.4304161,81.770679
+    }
+
+    public void openWebPage(String url){
+        Uri uri = Uri.parse(url);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+        if(intent.resolveActivity(getActivity().getPackageManager())!= null)
+            startActivity(intent);
     }
 }

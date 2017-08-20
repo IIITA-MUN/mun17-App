@@ -35,9 +35,4 @@ public class AboutUsPagerAdapter extends FragmentPagerAdapter {
 
         @Override
         public int getCount() { return mTitles.length; }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mTitles[position];
-        }
     }

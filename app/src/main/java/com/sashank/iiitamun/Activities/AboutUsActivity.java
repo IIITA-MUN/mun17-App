@@ -12,21 +12,20 @@ import android.view.MenuItem;
 
 import com.sashank.iiitamun.Adapters.AboutUsPagerAdapter;
 import com.sashank.iiitamun.R;
+import com.sashank.iiitamun.Utils.ZoomOutPageTransformer;
 
 public class AboutUsActivity extends AppCompatActivity {
-
-    private AboutUsPagerAdapter mAboutUsPagerAdapter;
-    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
 
-        mAboutUsPagerAdapter = new AboutUsPagerAdapter(getSupportFragmentManager());
+        AboutUsPagerAdapter mAboutUsPagerAdapter = new AboutUsPagerAdapter(getSupportFragmentManager());
 
-        mViewPager = (ViewPager) findViewById(R.id.vp_about_us);
+        ViewPager mViewPager = (ViewPager) findViewById(R.id.vp_about_us);
         mViewPager.setAdapter(mAboutUsPagerAdapter);
+        mViewPager.setPageTransformer(true, new ZoomOutPageTransformer());
 
         ActionBar actionBar = this.getSupportActionBar();
 
