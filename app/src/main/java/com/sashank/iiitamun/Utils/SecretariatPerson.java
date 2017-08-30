@@ -14,9 +14,10 @@ public class SecretariatPerson {
     private String emailLink;
     private String fbLink;
     private boolean isLeft;
+    private String bio;
 
     public SecretariatPerson(int imageRef, String name, String designation, String number, String emailLink, String fbLink,
-                             boolean isLeft) {
+                             boolean isLeft,String bio) {
         this.imageRef = imageRef;
         this.name = name;
         this.designation = designation;
@@ -24,6 +25,7 @@ public class SecretariatPerson {
         this.emailLink = emailLink;
         this.fbLink = fbLink;
         this.isLeft = isLeft;
+        this.bio = bio;
 
     }
 
@@ -54,5 +56,7 @@ public class SecretariatPerson {
     public boolean isLeft() {
         return isLeft;
     }
+
+    public String getBio() {return bio;}
 }
 

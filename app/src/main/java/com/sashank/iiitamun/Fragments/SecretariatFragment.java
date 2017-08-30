@@ -31,7 +31,8 @@ public class SecretariatFragment extends Fragment {
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
 
-        SecretariatAdapter secretariatAdapter = new SecretariatAdapter(getContext(),Constants.secretariatList);
+        SecretariatAdapter secretariatAdapter =
+                new SecretariatAdapter(getActivity(),Constants.secretariatList,getFragmentManager());
 
         mRecyclerSecretariat.setLayoutManager(layoutManager);
         mRecyclerSecretariat.setAdapter(secretariatAdapter);

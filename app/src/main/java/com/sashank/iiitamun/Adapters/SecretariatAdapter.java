@@ -1,12 +1,17 @@
 package com.sashank.iiitamun.Adapters;
 
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.constraint.ConstraintLayout;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -20,6 +25,8 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.sashank.iiitamun.*;
+import com.sashank.iiitamun.Fragments.DetailInfoFragment;
+import com.sashank.iiitamun.Fragments.SecretariatFragment;
 import com.sashank.iiitamun.Utils.SecretariatPerson;
 
 
@@ -31,11 +38,12 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
 
     private List<SecretariatPerson> secretariatPersonList;
     private Context context;
-    //private FrameLayout parentView;
+    private FragmentManager fm;
 
-    public SecretariatAdapter(Context context, List<SecretariatPerson> secretariatPersonList){
+    public SecretariatAdapter(Context context, List<SecretariatPerson> secretariatPersonList, FragmentManager fragmentManager){
         this.secretariatPersonList = secretariatPersonList;
         this.context = context;
+        this.fm = fragmentManager;
     }
 
 
@@ -123,10 +131,27 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
             }
         });
 
+
+
         /*holder.mProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showPopup(v);
+                DetailInfoFragment dialog = new DetailInfoFragment();
+                LayoutInflater inflater = ((Activity)context).getLayoutInflater();
+                View view = inflater.inflate(R.layout.detail_dialog,null);
+
+                String bio = secretariatPersonList.get(finalPosition).getBio();
+                Log.d("BIO",bio);
+
+
+
+
+                TextView detail = (TextView) view.findViewById(R.id.tv_person_detail_text);
+                detail.setText(bio);
+
+                Log.d("BIO_UPDATE",detail.getText().toString());
+
+                dialog.show(fm, "ProfileDetailFragment");
             }
         });*/
     }
@@ -141,7 +166,7 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
         return secretariatPersonList.get(position).isLeft()? 0 : 1 ;
     }
 
-    public static Intent getOpenFacebookIntent(Context context, String Id) {
+    private static Intent getOpenFacebookIntent(Context context, String Id) {
 
         Intent intent = null;
         try {

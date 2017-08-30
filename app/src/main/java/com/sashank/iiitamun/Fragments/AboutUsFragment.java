@@ -21,7 +21,7 @@ public class AboutUsFragment extends Fragment {
 
     public static final String ARG_SECTION_NUMBER = "section_number";
 
-    int mResources[] = {R.drawable.mun_logo, R.drawable.sarasva_logo, R.mipmap.ic_committees, R.drawable.iiita};
+    int mResources[] = {R.drawable.mun_logo, R.drawable.sarasva_logo, R.drawable.effe17, R.drawable.iiita};
 
     String[] mTitles = {
             "IIITA MUN",

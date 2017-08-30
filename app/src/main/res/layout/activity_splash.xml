@@ -1,37 +1,29 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     style="@style/Theme.AppCompat.NoActionBar"
-    android:background="#00000f">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_gravity="center"
-        android:id="@+id/image_splash"
-        android:src="@mipmap/ic_launcher"
-        android:contentDescription="@string/logo_description"/>
+    android:background="#08080a">
 
-     <TextView
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loader_screen"
+        android:gravity="center"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:id="@+id/tv_days_left"
          android:visibility="visible"
-         android:layout_gravity="center"
          android:gravity="center_horizontal"
-         android:layout_margin="10dp"
+         android:layout_marginBottom="90dp"
          android:textColor="@android:color/white"
-         android:textSize="30sp"/>
+         android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/pb_loader"
-        android:layout_marginBottom="60dp"
-        android:layout_margin="10dp"
-        android:layout_gravity="center"/>
-
-
-</LinearLayout>
+</RelativeLayout>

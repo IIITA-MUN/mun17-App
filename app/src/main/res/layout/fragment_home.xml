@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<!--<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -27,6 +27,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/title_aboutus"
+            android:textColor="@android:color/black"
+            android:background="@color/colorAccent"
             android:textSize="20sp"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
@@ -36,7 +38,10 @@
             android:id="@+id/tv_aboutMun"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
             android:padding="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
             android:text="@string/title_aboutmun"
             android:textSize="20sp"
             android:layout_below="@+id/tv_aboutUs"
@@ -46,8 +51,11 @@
         <Button
             android:id="@+id/tv_committees"
             android:layout_width="150dp"
-            android:layout_height="112dp"
+            android:layout_height="125dp"
             android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
             android:text="@string/title_committees"
             android:textSize="20sp"
             android:layout_alignParentTop="true"
@@ -58,57 +66,59 @@
     </RelativeLayout>
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:id="@+id/cons_apply"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cons_blog"
-        android:layout_marginStart="48dp">
+        tools:layout_editor_absoluteX="8dp">
 
         <TextView
             android:id="@+id/tv_apply"
-            android:layout_height="120dp"
-            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_width="90dp"
             android:background="@drawable/round_button"
             android:gravity="center"
             android:textSize="18sp"
             android:elevation="10dp"
             android:text="APPLY"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@android:color/black"
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent" />
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:layout_editor_absoluteX="122dp" />
 
 
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/cons_blog"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
         app:layout_constraintStart_toEndOf="@+id/cons_apply"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="48dp">
+        tools:layout_editor_absoluteX="136dp">
 
         <TextView
             android:id="@+id/tv_blog"
-            android:layout_height="120dp"
-            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_width="90dp"
             android:background="@drawable/round_button"
             android:gravity="center"
             android:textSize="18sp"
             android:elevation="10dp"
             android:text="BLOG"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@android:color/black"
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent" />
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:layout_editor_absoluteX="123dp" />
 
 
     </android.support.constraint.ConstraintLayout>
@@ -161,4 +171,93 @@
     </RelativeLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout> -->
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="368dp"
+            android:layout_height="368dp"
+            android:id="@+id/cons_apply"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cons_blog"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/cons_blog"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteX="8dp">
+
+            <TextView
+                android:id="@+id/tv_apply"
+                android:layout_height="90dp"
+                android:layout_width="90dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:elevation="10dp"
+                android:text="APPLY"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cons_blog"
+            app:layout_constraintStart_toEndOf="@+id/cons_apply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv_blog"
+                android:layout_height="90dp"
+                android:layout_width="90dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:elevation="10dp"
+                android:text="BLOG"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                tools:layout_editor_absoluteX="-56dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/upshadow"/>
+
+</RelativeLayout>

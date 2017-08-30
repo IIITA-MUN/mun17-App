@@ -11,12 +11,14 @@
         android:id="@+id/tv_activity_name"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
-        android:gravity="center_vertical"
+        android:gravity="start"
         tools:text="text"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="22sp" />
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"/>
 
 </RelativeLayout>

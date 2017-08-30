@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_profile"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -34,6 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="TextView"
+                android:textSize="20sp"
                 android:layout_marginRight="8dp"
                 card_view:layout_constraintRight_toRightOf="parent"
                 card_view:layout_constraintLeft_toRightOf="@+id/iv_profile"
@@ -46,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="TextView"
+                android:textSize="16sp"
                 card_view:layout_constraintLeft_toRightOf="@+id/iv_profile"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
@@ -53,7 +55,7 @@
                 android:layout_marginTop="16dp"
                 card_view:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/bt_facebook"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
@@ -66,7 +68,7 @@
                 android:layout_marginBottom="24dp" />
 
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/bt_call"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
@@ -78,7 +80,7 @@
                 android:layout_marginBottom="24dp"
                 android:layout_marginRight="8dp" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
 
                 android:id="@+id/bt_email"
                 android:layout_width="30dp"

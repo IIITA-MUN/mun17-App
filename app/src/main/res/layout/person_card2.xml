@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_profile"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -35,6 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="TextView"
+                android:textSize="20sp"
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="20dp"
@@ -47,6 +48,7 @@
                 android:id="@+id/tv_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="16sp"
                 tools:text="TextView"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"

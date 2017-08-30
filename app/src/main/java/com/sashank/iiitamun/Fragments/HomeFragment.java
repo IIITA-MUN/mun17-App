@@ -35,26 +35,27 @@ public class HomeFragment extends Fragment{
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
                 "fonts/SourceSansPro-Regular.ttf");
 
-        TextView mAboutMun = (TextView) v.findViewById(R.id.tv_aboutMun);
-        TextView mCommittees = (TextView) v.findViewById(R.id.tv_committees);
-        TextView mAboutUs = (TextView) v.findViewById(R.id.tv_aboutUs);
+        //TextView mAboutMun = (TextView) v.findViewById(R.id.tv_aboutMun);
+        //TextView mCommittees = (TextView) v.findViewById(R.id.tv_committees);
+        //TextView mAboutUs = (TextView) v.findViewById(R.id.tv_aboutUs);
         TextView mApply = (TextView) v.findViewById(R.id.tv_apply);
         TextView mBlog = (TextView) v.findViewById(R.id.tv_blog);
 
-        ImageView mLocateUs = (ImageView) v.findViewById(R.id.iv_locate_us);
-        ImageView mCredits = (ImageView) v.findViewById(R.id.iv_credits);
+        //ImageView mLocateUs = (ImageView) v.findViewById(R.id.iv_locate_us);
+        //ImageView mCredits = (ImageView) v.findViewById(R.id.iv_credits);
 
         TextView title = (TextView) getActivity().findViewById(R.id.tv_activity_name);
         title.setText(R.string.title_home);
         title.setTypeface(tf);
 
 
-        mAboutMun.setTypeface(tf);
-        mCommittees.setTypeface(tf);
-        mAboutUs.setTypeface(tf);
+        //mAboutMun.setTypeface(tf);
+        //mCommittees.setTypeface(tf);
+        //mAboutUs.setTypeface(tf);
         mApply.setTypeface(tf);
 
 
+        /*
         mAboutMun.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -91,7 +92,7 @@ public class HomeFragment extends Fragment{
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), DeveloperActivity.class));
             }
-        });
+        });*/
 
         mApply.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,15 +111,6 @@ public class HomeFragment extends Fragment{
         return v;
     }
 
-    public void openInMap() {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:<25.4304161>,<81.770679>" +
-                "?q=<25.4304161>,<81.770679>(Indian Institute of Information Technology, Allahabad)"));
-
-        if (intent.resolveActivity(getActivity().getPackageManager()) != null)
-            startActivity(intent);
-
-        //Location = 25.4304161,81.770679
-    }
 
     public void openWebPage(String url){
         Uri uri = Uri.parse(url);

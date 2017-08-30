@@ -1,6 +1,8 @@
 package com.sashank.iiitamun.Activities;
 
+import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -9,8 +11,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.sashank.iiitamun.Fragments.HomeFragment;
 import com.sashank.iiitamun.R;
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView navigationView;
     FragmentManager fm;
+    Boolean showToast;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -37,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_resources:
                     setFragment(resourcesFragment);
+                    if(showToast){
+                        Toast.makeText(getApplicationContext(),"Click on images to know more!!",Toast.LENGTH_SHORT).show();
+                        showToast = false;
+                    }
                     return true;
                 case R.id.navigation_secretariat:
                     setFragment(secretariatFragment);
@@ -64,14 +73,7 @@ public class MainActivity extends AppCompatActivity {
         resourcesFragment = new ResourcesFragment();
         secretariatFragment = new SecretariatFragment();
 
-
-        /*ViewGroup actionBarLayout = (ViewGroup) getLayoutInflater().
-                inflate(R.layout.actionbar_custom, null);
-        ActionBar actionBar = this.getSupportActionBar();
-        actionBar.setDisplayShowCustomEnabled(true);
-        actionBar.setCustomView(actionBarLayout);*/
-
-
+        showToast = true;
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.actionbar_custom);
         ((TextView)findViewById(R.id.tv_activity_name)).setText(R.string.app_name);
@@ -126,6 +128,48 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main , menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.locate_us:
+                openInMap();
+                return true;
+            case R.id.rate_us:
+                return true;
+            case R.id.web:
+                openWebPage("http://mun.iiita.ac.in");
+                return true;
+            case R.id.credits:
+                startActivity(new Intent(this,DeveloperActivity.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void openInMap() {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:<25.4304161>,<81.770679>" +
+                "?q=<25.4304161>,<81.770679>(Indian Institute of Information Technology, Allahabad)"));
+
+        if (intent.resolveActivity(getPackageManager()) != null)
+            startActivity(intent);
+
+        //Location = 25.4304161,81.770679
+    }
+
+    public void openWebPage(String url){
+        Uri uri = Uri.parse(url);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+        if(intent.resolveActivity(getPackageManager())!= null)
+            startActivity(intent);
     }
 }
 
