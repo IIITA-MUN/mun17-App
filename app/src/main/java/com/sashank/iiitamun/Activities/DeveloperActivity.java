@@ -25,7 +25,7 @@ public class DeveloperActivity extends AppCompatActivity {
         }
 
         Typeface tf = Typeface.createFromAsset(getAssets(),
-                "fonts/SourceSansPro-Regular.ttf");
+                "fonts/Raleway-Regular.ttf");
 
         Typeface tfb = Typeface.createFromAsset(getAssets(),
                 "fonts/SourceSansPro-SemiboldItalic.ttf");

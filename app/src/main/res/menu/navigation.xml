@@ -4,17 +4,17 @@
     <item
         android:id="@+id/navigation_secretariat"
         android:icon="@drawable/ic_people_black_24dp"
-        android:title=""
+        android:title="@string/title_secretariat"
         />
 
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="" />
+        android:title="@string/title_home" />
 
     <item
         android:id="@+id/navigation_resources"
         android:icon="@drawable/ic_local_library_black_24dp"
-        android:title="" />
+        android:title="@string/title_resources" />
 
 </menu>

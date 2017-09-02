@@ -35,27 +35,16 @@ public class HomeFragment extends Fragment{
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
                 "fonts/SourceSansPro-Regular.ttf");
 
-        //TextView mAboutMun = (TextView) v.findViewById(R.id.tv_aboutMun);
-        //TextView mCommittees = (TextView) v.findViewById(R.id.tv_committees);
-        //TextView mAboutUs = (TextView) v.findViewById(R.id.tv_aboutUs);
-        TextView mApply = (TextView) v.findViewById(R.id.tv_apply);
-        TextView mBlog = (TextView) v.findViewById(R.id.tv_blog);
-
-        //ImageView mLocateUs = (ImageView) v.findViewById(R.id.iv_locate_us);
-        //ImageView mCredits = (ImageView) v.findViewById(R.id.iv_credits);
+        ImageView mAboutMun = (ImageView) v.findViewById(R.id.iv_about_mun);
+        ImageView mCommittees = (ImageView) v.findViewById(R.id.iv_committees);
+        ImageView mAboutUs = (ImageView) v.findViewById(R.id.iv_about_us);
+        ImageView mApply = (ImageView) v.findViewById(R.id.iv_apply);
+        ImageView mBlog = (ImageView) v.findViewById(R.id.iv_blog);
 
         TextView title = (TextView) getActivity().findViewById(R.id.tv_activity_name);
         title.setText(R.string.title_home);
         title.setTypeface(tf);
 
-
-        //mAboutMun.setTypeface(tf);
-        //mCommittees.setTypeface(tf);
-        //mAboutUs.setTypeface(tf);
-        mApply.setTypeface(tf);
-
-
-        /*
         mAboutMun.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -79,20 +68,6 @@ public class HomeFragment extends Fragment{
                 startActivity(new Intent(getContext(), AboutUsActivity.class));
             }
         });
-
-        mLocateUs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openInMap();
-            }
-        });
-
-        mCredits.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getContext(), DeveloperActivity.class));
-            }
-        });*/
 
         mApply.setOnClickListener(new View.OnClickListener() {
             @Override
