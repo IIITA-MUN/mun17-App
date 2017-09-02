@@ -34,7 +34,7 @@ public class DisecSheetFragment extends BottomSheetDialogFragment{
         mLink2.setTypeface(tf);
         mLink3.setTypeface(tf);
 
-        ((ImageView) contentView.findViewById(R.id.iv_sheet1)).setImageResource(R.drawable.pdf);
+        ((ImageView) contentView.findViewById(R.id.iv_sheet1)).setImageResource(R.drawable.un_logo);
         ((ImageView) contentView.findViewById(R.id.iv_sheet2)).setImageResource(R.drawable.pdf);
         ((ImageView) contentView.findViewById(R.id.iv_sheet3)).setImageResource(R.drawable.pdf);
 
@@ -47,7 +47,7 @@ public class DisecSheetFragment extends BottomSheetDialogFragment{
         });
 
 
-        mLink3.setOnClickListener(new View.OnClickListener() {
+        mLink2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //openWebPage(mWorldBankUrl);
@@ -57,11 +57,12 @@ public class DisecSheetFragment extends BottomSheetDialogFragment{
         });
 
 
-        mLink2.setOnClickListener(new View.OnClickListener() {
+        mLink3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //openWebPage(mFactbookUrl);
-                Toast.makeText(getContext(),"Will be out soon!",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(),"Will be out soon!",Toast.LENGTH_SHORT).show();
+                openWebPage("https://docs.google.com/spreadsheets/d/1vW9L9g4Ps01Ppj_znxJge7-YTOsGeybGuCuKmPqdJ3o/edit?ts=599814e8#gid=1203201757");
             }
         });
 
