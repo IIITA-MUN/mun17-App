@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.sashank.iiitamun.Activities.AboutMUNActivity;
 import com.sashank.iiitamun.Activities.AboutUsActivity;
+import com.sashank.iiitamun.Activities.ApplyActivity;
 import com.sashank.iiitamun.Activities.CommitteesActivity;
 import com.sashank.iiitamun.Activities.DeveloperActivity;
 import com.sashank.iiitamun.R;
@@ -72,7 +73,8 @@ public class HomeFragment extends Fragment{
         mApply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openWebPage("https://mun.iiita.ac.in/home/apply.html");
+                ApplyFragment fg = new ApplyFragment();
+                fg.show(getFragmentManager(),"ApplyFragment");
             }
         });
 

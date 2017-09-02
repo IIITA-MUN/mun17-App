@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="apply_array">
+        <item name="delegate">Delegate</item>
+        <item name="eb">Executive Board</item>
+    </string-array>
+
+</resources>
