@@ -5,4 +5,7 @@
     <color name="colorAccent">#3e4ee5</color>
     <color name="background_material_dark">#303030</color>
     <color name="background_blue">#FFFFFF</color>
+
+    <color name="tab_color1">#05386b</color>
+    <color name="tab_color2">#b3c2bf</color>
 </resources>

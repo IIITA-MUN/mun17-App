@@ -1,39 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.sashank.iiitamun.Activities.DeveloperActivity">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.sashank.iiitamun.Activities.DeveloperActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_developer"
-        android:textSize="35sp"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="48dp"
-        android:id="@+id/tv_app_developer" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_developer"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:id="@+id/tv_app_developer" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="250dp"
-        android:layout_height="230dp"
-        android:id="@+id/iv_developer"
-        android:src="@drawable/sashank_eng"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/tv_app_developer_name"
+            android:textColor="#00000f"
+            android:layout_marginTop="30dp"
+            android:text="@string/name_developer"
+            android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:id="@+id/tv_app_developer_name"
-        android:textColor="#00000f"
-        android:layout_marginTop="10dp"
-        android:text="@string/name_developer"
-        android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_designer"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:id="@+id/tv_creatives" />
 
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/tv_creatives_name1"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:textColor="#00000f"
+                android:text="@string/name_designer1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_creatives_name2"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="#00000f"
+                android:text="@string/name_designer2"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>

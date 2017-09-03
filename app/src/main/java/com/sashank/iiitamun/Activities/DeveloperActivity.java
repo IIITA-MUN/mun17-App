@@ -32,6 +32,9 @@ public class DeveloperActivity extends AppCompatActivity {
 
         ((TextView)findViewById(R.id.tv_app_developer)).setTypeface(tfb);
         ((TextView)findViewById(R.id.tv_app_developer_name)).setTypeface(tf);
+        ((TextView)findViewById(R.id.tv_creatives)).setTypeface(tfb);
+        ((TextView)findViewById(R.id.tv_creatives_name1)).setTypeface(tf);
+        ((TextView)findViewById(R.id.tv_creatives_name2)).setTypeface(tf);
 
     }
 

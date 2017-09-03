@@ -44,6 +44,9 @@ Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
     <string name="res_aljazeera">Al Jazeera</string>
     <string name="res_britannica">Britannica</string>
     <string name="title_blog">Blog</string>
+    <string name="title_designer">Creative Designer</string>
+    <string name="name_designer1">Siddhant Srivastav</string>
+    <string name="name_designer2">Rishi Shukla</string>
 
 
 </resources>

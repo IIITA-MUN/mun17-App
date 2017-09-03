@@ -89,9 +89,11 @@ public class SecretariatAdapter extends RecyclerView.Adapter<SecretariatAdapter.
     @Override
     public void onBindViewHolder(AdapterViewHolder holder, int position) {
         Typeface tf = Typeface.createFromAsset(context.getAssets(),
-                "fonts/SourceSansPro-Regular.ttf");
+                "fonts/RobotoCondensed-Regular.ttf");
+        Typeface tfb = Typeface.createFromAsset(context.getAssets(),
+                "fonts/RobotoCondensed-Bold.ttf");
 
-        holder.mTitle.setTypeface(tf);
+        holder.mTitle.setTypeface(tfb);
         holder.mDescription.setTypeface(tf);
 
         holder.mTitle.setText(secretariatPersonList.get(position).getName());

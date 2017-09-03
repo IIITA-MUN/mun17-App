@@ -401,40 +401,40 @@
             android:id="@+id/iv_about_us"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:background="#23297a"
+            android:background="@color/tab_color1"
             android:src="@drawable/aboutus"
             android:text="@string/title_aboutus" />
 
         <ImageView
             android:id="@+id/iv_about_mun"
             android:layout_width="match_parent"
+            android:background="@color/tab_color2"
             android:layout_height="120dp"
-            android:src="@drawable/aboutmun"
-            android:background="#01796f"/>
+            android:src="@drawable/aboutmun" />
 
         <ImageView
             android:id="@+id/iv_committees"
             android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:background="@color/tab_color1"
             android:src="@drawable/committees_btn"
-            android:text="@string/title_committees"
-            android:background="#23297a" />
+            android:text="@string/title_committees" />
 
         <ImageView
             android:id="@+id/iv_apply"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:text="@string/title_apply"
-            android:src="@drawable/apply"
-            android:background="#01796f" />
+            android:background="@color/tab_color2"
+            android:src="@drawable/apply" />
 
         <ImageView
             android:id="@+id/iv_blog"
             android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:background="@color/tab_color1"
             android:text="@string/title_blog"
-            android:src="@drawable/blog"
-            android:background="#23297a" />
+            android:src="@drawable/blog" />
 
     </LinearLayout>
 </ScrollView>

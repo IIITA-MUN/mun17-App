@@ -15,9 +15,12 @@ import com.sashank.iiitamun.R;
 
 public class MiscSheetFragment extends BottomSheetDialogFragment{
 
-    private final String mReutersUrl = "https://in.reuters.com/";
+    private final String mReutersUrl = "https://www.reuters.com/";
     private final String mFactbookUrl = "https://www.cia.gov/library/publications/the-world-factbook/";
     private final String mWorldBankUrl = "https://data.worldbank.org/";
+    private final String mAljazeeraUrl = "https://www.aljazeera.com";
+    private final String mBritannicaUrl = "https://www.britannica.com/";
+
 
     @Override
     public void setupDialog(Dialog dialog, int style) {
@@ -64,8 +67,6 @@ public class MiscSheetFragment extends BottomSheetDialogFragment{
             }
         });
 
-
-
         mFactBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +79,18 @@ public class MiscSheetFragment extends BottomSheetDialogFragment{
             public void onClick(View v) {
                 openWebPage(mReutersUrl);
             }
+        });
+
+        mAljazeera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openWebPage(mAljazeeraUrl);
+            }
+        });
+
+        mBritannica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openWebPage(mBritannicaUrl);}
         });
 
         dialog.setContentView(contentView);
