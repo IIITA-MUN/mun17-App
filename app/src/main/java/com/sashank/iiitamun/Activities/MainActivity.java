@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView navigationView;
     FragmentManager fm;
-    Boolean showToast;
+    Boolean exitToast;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -42,10 +42,6 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_resources:
                     setFragment(resourcesFragment);
-                    if(showToast){
-                        Toast.makeText(getApplicationContext(),"Click on images to know more!!",Toast.LENGTH_SHORT).show();
-                        showToast = false;
-                    }
                     return true;
                 case R.id.navigation_secretariat:
                     setFragment(secretariatFragment);
@@ -73,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         resourcesFragment = new ResourcesFragment();
         secretariatFragment = new SecretariatFragment();
 
-        showToast = true;
+        exitToast = true;
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.actionbar_custom);
         ((TextView)findViewById(R.id.tv_activity_name)).setText(R.string.app_name);
@@ -127,7 +123,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        finish();
+        if(exitToast) {
+            Toast.makeText(this, "Press again to exit", Toast.LENGTH_SHORT).show();
+            exitToast = false;
+        }
+        else
+            finish();
     }
 
     @Override

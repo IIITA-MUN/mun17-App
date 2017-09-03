@@ -41,7 +41,7 @@ public class AboutUsFragment extends Fragment {
                     "Effervescence is a lively journey with 3 days of high octane entertainment. The festivities comprise of a plethora of informal events in the morning, and in the evening, a full platter if dance, dramatics, music and literary competitions unfold. The final night of Effervescence has seen bands like Bombay Vikings, Euphoria, Silk Route and Strings, along with celebrities such as Neha Kakkar, Sona Mohapatra and Daler Mehndi performing live.\n" +
                     "\n" +
                     "Effervescence is the time that allows the youth to fully express themselves - be it through art, culture or entertainment.",
-            "IIITA MUN is the first Model United Nations in the city of Allahabad. Started in 2014, it is an intiative which aims to establish a healthy MUNing culture. IIITA MUN will put to test one’s ability to research, persuade, and lead, testing the fledgling diplomat in them. Delegates will work with participants from all over the country in a highly competitive environment. In dissecting world affairs and creating policies in a conference of the highest quality, we hope to transform you from students into future leaders, all the while creating unforgettable memories.",
+            "IIITA MUN is the first Model United Nations in the city of Allahabad. Started in 2014, it is an intiative which aims to establish a healthy MUNing culture. IIITA MUN will check one’s ability to research, persuade, and lead, testing the fledgling diplomat in them. Delegates will work with participants from all over the country in a highly competitive environment. In dissecting world affairs and creating policies in a conference of the highest quality, we hope to transform you from students into future leaders, all the while creating unforgettable memories.",
             "Sarasva is the Literary Society of the Indian Institute of Information Technology, Allahabad. The society has striven to promote debate, discussion and dialouge on campus through several events and initiatives including a TEDx, Model United Nations, Lit-a-thon, One on One and Group debates, Parliamentary Debates, Kavi Sammelans, creative writing, quizzing etc. The society also runs the Institute Newsletter which gathers and delivers news from around the campus apart from running a Media Team, Editorial Team and the International Press Team.\n\n" +
                     "Literature is the art of discovering something extraordinary about ordinary things and saying with ordinary words something extraordinary. At Sarasva we endeavour to push the boundaries of literature and quizzing in order to usher in a atmosphere of active dialouge.\n" +
                     "\n" +
@@ -66,7 +66,7 @@ public class AboutUsFragment extends Fragment {
 
         image.setImageResource(mResources[position]);
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),
-                "fonts/SourceSansPro-Regular.ttf");
+                "fonts/RobotoCondensed-Regular.ttf");
         Typeface tfb = Typeface.createFromAsset(getActivity().getAssets(),
                 "fonts/Nexa_Bold.otf");
         mAboutDetails.setText(mDetails[position]);

@@ -19,7 +19,7 @@ public class AboutMUNActivity extends AppCompatActivity {
 
         TextView mDetail = (TextView) findViewById(R.id.tv_detail_mun);
         Typeface tf = Typeface.createFromAsset(getAssets(),
-                "fonts/Raleway-Regular.ttf");
+                "fonts/RobotoCondensed-Regular.ttf");
         mDetail.setTypeface(tf);
 
         ActionBar actionBar = this.getSupportActionBar();

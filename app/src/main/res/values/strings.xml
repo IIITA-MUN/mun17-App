@@ -39,10 +39,11 @@ Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
     <string name="title_developer">App Developer</string>
     <string name="name_developer">Sashank Mishra</string>
     <string name="title_disec">Disarmament and International Security Committee</string>
-    <string name="title_sc">Security Council - United Nations</string>
+    <string name="title_sc">United Nations Security Council</string>
     <string name="title_misc">Miscellaneous</string>
     <string name="res_aljazeera">Al Jazeera</string>
     <string name="res_britannica">Britannica</string>
+    <string name="title_blog">Blog</string>
 
 
 </resources>

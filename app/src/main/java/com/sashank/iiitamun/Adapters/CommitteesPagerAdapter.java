@@ -15,7 +15,7 @@ import com.sashank.iiitamun.Fragments.CommitteesFragment;
 
 public class CommitteesPagerAdapter extends FragmentStatePagerAdapter {
 
-    String titles[] = {"The Disarmament and International Security Committee (DISEC)", "Security Council (SC)"};
+    String titles[] = {"The Disarmament and International Security Committee (DISEC)", "United Nations Security Council (UNSC)"};
 
     public CommitteesPagerAdapter(FragmentManager fm) {
         super(fm);
