@@ -2,18 +2,18 @@ package com.sashank.iiitamun.Activities;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.icu.text.SimpleDateFormat;
+import java.text.SimpleDateFormat;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.sashank.iiitamun.R;
 
 import java.util.Date;
+import java.util.Locale;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -27,8 +27,7 @@ public class SplashActivity extends AppCompatActivity {
                 "fonts/SourceSansPro-Regular.ttf");
 
         try {
-            SimpleDateFormat dateFormat = new SimpleDateFormat(
-                    "yyyy-MM-dd");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
             // Here Set your Event Date
             Date futureDate = dateFormat.parse("2017-10-07");
             Date currentDate = new Date();

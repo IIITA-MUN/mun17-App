@@ -132,6 +132,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        navigationView.getMenu().getItem(1).setChecked(true);
+        setFragment(homeFragment);
+        super.onResume();
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main , menu);
         return true;

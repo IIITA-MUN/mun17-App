@@ -25,10 +25,10 @@ public class DeveloperActivity extends AppCompatActivity {
         }
 
         Typeface tf = Typeface.createFromAsset(getAssets(),
-                "fonts/Raleway-Regular.ttf");
+                "fonts/RobotoCondensed-Regular.ttf");
 
         Typeface tfb = Typeface.createFromAsset(getAssets(),
-                "fonts/SourceSansPro-SemiboldItalic.ttf");
+                "fonts/RobotoCondensed-Bold.ttf");
 
         ((TextView)findViewById(R.id.tv_app_developer)).setTypeface(tfb);
         ((TextView)findViewById(R.id.tv_app_developer_name)).setTypeface(tf);

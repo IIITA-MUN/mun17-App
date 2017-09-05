@@ -22,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:background="@drawable/nav_button_custom_bg"
         app:itemIconTint="@drawable/nav_button_custom_icon"
         app:itemTextColor="@drawable/nav_button_custom_icon"
         app:itemBackground="@drawable/nav_button_custom_bg"

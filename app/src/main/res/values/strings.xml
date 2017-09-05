@@ -47,6 +47,10 @@ Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
     <string name="title_designer">Creative Designer</string>
     <string name="name_designer1">Siddhant Srivastav</string>
     <string name="name_designer2">Rishi Shukla</string>
+    <string name="menu_locate">Locate Us</string>
+    <string name="menu_rate">Rate Us</string>
+    <string name="menu_web">Web</string>
+    <string name="menu_credits">Credits</string>
 
 
 </resources>
