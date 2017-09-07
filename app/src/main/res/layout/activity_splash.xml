@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     style="@style/Theme.AppCompat.NoActionBar"
-    android:background="#08080a">
+    android:background="#000000">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:src="@drawable/loader_screen"
         android:layout_centerInParent="true"/>
 

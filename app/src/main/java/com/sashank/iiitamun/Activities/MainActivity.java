@@ -123,12 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if(exitToast) {
-            Toast.makeText(this, "Press again to exit", Toast.LENGTH_SHORT).show();
-            exitToast = false;
-        }
-        else
-            finish();
+        finish();
     }
 
     @Override

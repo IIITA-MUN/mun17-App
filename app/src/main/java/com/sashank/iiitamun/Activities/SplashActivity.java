@@ -26,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
         Typeface tf = Typeface.createFromAsset(getAssets(),
                 "fonts/SourceSansPro-Regular.ttf");
 
-        try {
+        /*try {
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
             // Here Set your Event Date
             Date futureDate = dateFormat.parse("2017-10-07");
@@ -48,7 +48,7 @@ public class SplashActivity extends AppCompatActivity {
 
         }catch(Exception e){
             e.printStackTrace();
-        }
+        }*/
 
         new Handler().postDelayed(new Runnable(){
             @Override
