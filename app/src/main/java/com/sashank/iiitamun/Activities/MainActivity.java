@@ -128,8 +128,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        navigationView.getMenu().getItem(1).setChecked(true);
-        setFragment(homeFragment);
         super.onResume();
     }
 

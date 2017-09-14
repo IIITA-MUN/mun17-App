@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "36970990425",
-    "firebase_url": "https://iiita-mun-17.firebaseio.com",
-    "project_id": "iiita-mun-17",
-    "storage_bucket": "iiita-mun-17.appspot.com"
+    "project_number": "450418933487",
+    "firebase_url": "https://iiita-mun-2017.firebaseio.com",
+    "project_id": "iiita-mun-2017",
+    "storage_bucket": "iiita-mun-2017.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:36970990425:android:a9236bf67e98e9f0",
+        "mobilesdk_app_id": "1:450418933487:android:a9236bf67e98e9f0",
         "android_client_info": {
           "package_name": "com.sashank.iiitamun"
         }
       },
       "oauth_client": [
         {
-          "client_id": "36970990425-8niitt4d0u7gaud4inm4s09nelrpaggi.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.sashank.iiitamun",
-            "certificate_hash": "5cd62449d1742c45b5ea7f8a8bf58bf3e23c9d60"
-          }
-        },
-        {
-          "client_id": "36970990425-ke0ajlak664m0adca3irqm1mpbjd99js.apps.googleusercontent.com",
+          "client_id": "450418933487-85m2o9nevb9gv3q7pum10arre5k256h1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBWavAxO6pXmcEnYw_6MiNNJi34tht95xc"
+          "current_key": "AIzaSyAMX-BcbLaBn82MMZBIhGZrQqazoBLqOUY"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "36970990425-ke0ajlak664m0adca3irqm1mpbjd99js.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
