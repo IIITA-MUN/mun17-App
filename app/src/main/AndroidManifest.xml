@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sashank.iiitamun">
+    package="com.sashank.iiitamun17">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activities.SplashActivity"
+            android:name="com.sashank.iiitamun17.Activities.SplashActivity"
             android:noHistory="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -22,60 +22,60 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.MainActivity"
+            android:name="com.sashank.iiitamun17.Activities.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop" />
         <activity
-            android:name=".Activities.AboutMUNActivity"
+            android:name="com.sashank.iiitamun17.Activities.AboutMUNActivity"
             android:label="@string/title_aboutmun"
-            android:parentActivityName=".Activities.MainActivity">
+            android:parentActivityName="com.sashank.iiitamun17.Activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.MainActivity" />
+                android:value="com.sashank.iiitamun17.Activities.MainActivity" />
         </activity>
         <activity
-            android:name=".Activities.CommitteesActivity"
+            android:name="com.sashank.iiitamun17.Activities.CommitteesActivity"
             android:label="@string/title_committees"
-            android:parentActivityName=".Activities.MainActivity"
+            android:parentActivityName="com.sashank.iiitamun17.Activities.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.MainActivity" />
+                android:value="com.sashank.iiitamun17.Activities.MainActivity" />
         </activity>
         <activity
-            android:name=".Activities.AboutUsActivity"
+            android:name="com.sashank.iiitamun17.Activities.AboutUsActivity"
             android:label="@string/title_activity_about_us"
-            android:parentActivityName=".Activities.MainActivity">
+            android:parentActivityName="com.sashank.iiitamun17.Activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.MainActivity" />
+                android:value="com.sashank.iiitamun17.Activities.MainActivity" />
         </activity>
         <activity
-            android:name=".Activities.DeveloperActivity"
+            android:name="com.sashank.iiitamun17.Activities.DeveloperActivity"
             android:label="Credits"
-            android:parentActivityName=".Activities.MainActivity">
+            android:parentActivityName="com.sashank.iiitamun17.Activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.MainActivity" />
+                android:value="com.sashank.iiitamun17.Activities.MainActivity" />
         </activity>
 
-        <service android:name=".FirebaseIdService">
+        <service android:name="com.sashank.iiitamun17.FirebaseIdService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name="com.sashank.iiitamun17.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <activity android:name=".Activities.ApplyActivity"
+        <activity android:name="com.sashank.iiitamun17.Activities.ApplyActivity"
             android:label="Apply"
-            android:parentActivityName=".Activities.MainActivity">
+            android:parentActivityName="com.sashank.iiitamun17.Activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Activities.MainActivity" />
+                android:value="com.sashank.iiitamun17.Activities.MainActivity" />
         </activity>
     </application>
 
