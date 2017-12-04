@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
                 openInMap();
                 return true;
             case R.id.rate_us:
+                openMarket();
                 return true;
             case R.id.web:
                 openWebPage("http://mun.iiita.ac.in");
@@ -168,6 +169,13 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse(url);
 
         Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+        if(intent.resolveActivity(getPackageManager())!= null)
+            startActivity(intent);
+    }
+
+    public void openMarket(){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("market://details?id=com.sashank.iiitamun17"));
         if(intent.resolveActivity(getPackageManager())!= null)
             startActivity(intent);
     }
